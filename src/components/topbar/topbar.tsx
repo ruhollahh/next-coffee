@@ -3,9 +3,11 @@ import { TopActions } from "./top-actions";
 
 export const Topbar = () => {
 	return (
-		<div className="flex gap-8 justify-between bg-base-100 py-2 px-8 text-sm text-base-100-content">
-			<MarketingText />
-			<TopActions />
+		<div className="drop-shadow-lg border-b border-solid border-secondary-content bg-secondary text-sm text-secondary-content">
+			<div className="max-w-wrapper flex gap-8 justify-between py-2">
+				<MarketingText />
+				<TopActions />
+			</div>
 		</div>
 	);
 };
